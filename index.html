@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet/less" href="./less/base.less">
+    <link rel="stylesheet/less" href="./less/index.less">
+    <script src="./lib/less/less.js"></script>
+    <link rel="stylesheet" href="./lib/swiper/css/swiper.min.css">
+    <script>
+        setHtmlFontSize();
+
+        function setHtmlFontSize() {
+            // 1. 获取当前页面的宽度
+            var windowWidth = window.innerWidth;
+            // 2. 计算当前屏幕宽度需要设置的字体大小
+            var htmlFontSize = windowWidth / 10;
+            // 3. 把计算结果设置给html
+            document.querySelector('html').style.fontSize = htmlFontSize + 'px';
+        }
+        window.addEventListener('resize', setHtmlFontSize);
+    </script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header id="header">
+        <span>上海</span>
+        <span>驴妈妈旅游网</span>
+        <img src="./images/icon/my.png" alt="">
+    </header>
+    <section id="slide">
+        <!-- 2. 写结构 swiper规定的结构 有对应的样式的 -->
+        <!-- swiper的大容器 -->
+        <div class="swiper-container">
+            <!-- swiper的所有图片的容器 -->
+            <div class="swiper-wrapper">
+                <!-- 每一张图片容器 -->
+                <div class="swiper-slide">
+
+                    <img src="./images/img/banner1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/img/banner2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/img/banner3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+
+                    <img src="./images/img/banner4.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/img/banner5.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/img/banner6.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/img/banner7.jpg" alt="">
+                </div>
+            </div>
+            <!-- 小圆点容器 -->
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </section>
+    <!-- 导航 -->
+    <nav id="nav">
+        <section id="top">
+            <div class="menu">
+                <a href="#">
+                    <img src="./images/icon/nav1.png" alt="">
+                </a>
+            </div>
+            <div class="menu">
+                <a href="#">
+                    <img src="./images/icon/nav2.png" alt="">
+                </a>
+            </div>
+            <div class="menu">
+                <a href="#">
+                    <img src="./images/icon/nav3.png" alt="">
+                </a>
+            </div>
+            <div class="menu">
+                <a href="#">
+                    <img src="./images/icon/nav4.png" alt="">
+                </a>
+            </div>
+            <div class="menu">
+                <a href="#">
+                    <img src="./images/icon/nav5.png" alt="">
+                </a>
+            </div>
+            <div class="menu">
+                <a href="#">
+                    <img src="./images/icon/nav6.png" alt="">
+                </a>
+            </div>
+        </section>
+        <section id="bottom">
+            <div class="submenu">
+                <a href="#">
+                    <img src="./images/icon/j1.png" alt="">
+                </a>
+            </div>
+            <div class="submenu">
+                <a href="#">
+                    <img src="./images/icon/j2.png" alt="">
+                </a>
+            </div>
+            <div class="submenu">
+                <a href="#">
+                    <img src="./images/icon/j3.png" alt="">
+                </a>
+            </div>
+            <div class="submenu">
+                <a href="#">
+                    <img src="./images/icon/j4.png" alt="">
+                </a>
+            </div>
+            <div class="submenu">
+                <a href="#">
+                    <img src="./images/icon/j5.png" alt="">
+                </a>
+            </div>
+            <div class="submenu">
+                <a href="#">
+                    <img src="./images/icon/j6.png" alt="">
+                </a>
+            </div>
+            <div class="submenu">
+                <a href="#">
+                    <img src="./images/icon/j7.png" alt="">
+                </a>
+            </div>
+            <div class="submenu">
+                <a href="#">
+                    <img src="./images/icon/j8.png" alt="">
+                </a>
+            </div>
+        </section>
+    </nav>
+    <!-- 主体 -->
+    <main id="main">
+        <section id="head">
+            <div class="left">
+                <a href="#">
+                    <img src="./images/img/t1.jpg" alt="">
+                </a>
+            </div>
+            <div class="right">
+                <a href="#">
+                    <img src="./images/img/t2.jpg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./images/img/t3.jpg" alt="">
+                </a>
+            </div>
+        </section>
+        <section id="act">
+            <h4>热门活动</h4>
+            <div class="box">
+                <a href="#">
+                    <img src="./images/img/r1.jpg" alt="">
+                </a>
+            </div>
+            <div class="box">
+                <a href="#">
+                    <img src="./images/img/r2.jpg" alt="">
+                </a>
+            </div>
+            <div class="box">
+                <a href="#">
+                    <img src="./images/img/r3.jpg" alt="">
+                </a>
+            </div>
+            <div class="box">
+                <a href="#">
+                    <img src="./images/img/r4.jpg" alt="">
+                </a>
+            </div>
+        </section>
+        <section id="tra">
+            <div class="content">
+                <span class="left">周六</span>
+                <span class="right">长假</span>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/img/zm1.jpg" alt="">
+                        <strong>音乐【音乐】</strong>
+                        <span>音乐制作人音乐制作人音乐制作人音乐制作人音乐制作人</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/img/zm2.jpg" alt="">
+                        <strong>音乐【音乐】</strong>
+                        <span>音乐制作人音乐制作人音乐制作人音乐制作人音乐制作人</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/img/zm3.jpg" alt="">
+                        <strong>音乐【音乐】</strong>
+                        <span>音乐制作人音乐制作人音乐制作人音乐制作人音乐制作人</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/img/zm4.jpg" alt="">
+                        <strong>音乐【音乐】</strong>
+                        <span>音乐制作人音乐制作人音乐制作人音乐制作人音乐制作人</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/img/zm5.jpg" alt="">
+                        <strong>音乐【音乐】</strong>
+                        <span>音乐制作人音乐制作人音乐制作人音乐制作人音乐制作人</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="more">
+            查看更多>
+        </section>
+    </main>
+    <!-- 尾部 -->
+    <footer id="footer">
+        <div class="left">
+            <span>登录</span>
+            <span>注册</span>
+        </div>
+        <div class="right">TOP</div>
+    </footer>
+    <!-- 考虑rem是移动端开发，就只做移动端 -->
+   
+   
+    <script src="./lib/swiper/js/swiper.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
